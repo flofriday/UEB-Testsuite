@@ -1,10 +1,11 @@
 # asma tests
 
-**Disclaimer:** At the moment there are just three very basic tests but this
-should already be enough of a framework to build further tests upon them.
+This tests your assembly implementation with the reference C implementation from
+the assignment.
 
-You can easily add further tests by modifying `test.c` and if you do please push
-them upstream with a PR so that other students can benefit from them 😉
+You can easily add further tests by modifying `test.c`. If you do please
+consider pushing them upstream with a PR so that other students can benefit from
+them 😉
 
 ## Usage
 

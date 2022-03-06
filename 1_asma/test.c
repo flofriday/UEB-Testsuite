@@ -104,4 +104,10 @@ int main()
     test("Just zeros", "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0");
     test("Ascii Zeros", "0000000000000000");
     test("A ascii one", "1000000000000000");
+    test("Ascii abc", "ABCDEFGHIJKLMNOP");
+    test("Ascii hex", "0123456789abcdef");
+    test("Hello World", "Hello World\0\0\0\0\0");
+    test("Badly terminated", "visible\0 hidden");
+    test("Good boy", "You are a good boy");
+    test("Long text", "This is a long text but it doesn't even matter because the test function will truncate it.");
 }
