@@ -59,23 +59,25 @@ void printAsHex(char text[], int n)
  * Otherwise the functions will access memory outside the buffer.
  *
  * @param testname Every test has a name so that it is easier to figure out
- *  exactly which test failed.
+ * exactly which test failed.
  *
- * @param testdata A at least 16byte string with which the implementations will
+ * @param testinput A at least 16byte string with which the implementations will
  * be tested.
  */
-void test(char *testname, char *testdata)
+void test(char *testname, char *testinput)
 {
-    // Create a second copy as the function modifies the input array.
-    char controll[16];
-    memcpy(controll, testdata, 16);
+    // Create mutable copies of the testinput string
+    char testdata[16];
+    memcpy(testdata, testinput, 16);
+    char controlldata[16];
+    memcpy(controlldata, testinput, 16);
 
     // Call both implementations
     asma(testdata);
-    asma_controll(controll);
+    asma_controll(controlldata);
 
     // Compare the results
-    if (memcmp(controll, testdata, 16) == 0)
+    if (memcmp(controlldata, testdata, 16) == 0)
     {
         printf("Test '%s' passed.\n", testname);
         return;
@@ -92,8 +94,8 @@ void test(char *testname, char *testdata)
     printf("\n");
     printf("But should have returned: ");
     printf("\n\thex: ");
-    printAsHex(controll, 16);
-    printf("\n\tascii: '%.16s'", controll);
+    printAsHex(controlldata, 16);
+    printf("\n\tascii: '%.16s'", controlldata);
     printf("\n\n");
 }
 
