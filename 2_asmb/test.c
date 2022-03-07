@@ -107,10 +107,12 @@ void test(char *testname, char *testinput, int n)
 int main()
 {
     test("Empty input", "", 0);
+    test("Negative n", "", -32);
     test("32 Ascii Zeros", "00000000000000000000000000000000", 32);
     test("64 Ascii Zeros", "0000000000000000000000000000000000000000000000000000000000000000", 64);
     test("One Ascii One (32)", "10000000000000000000000000000000", 32);
     test("One Ascii One (64)", "1000000000000000000000000000000000000000000000000000000000000000", 64);
+    test("Hex String", "\x00\x01\x02\x03\x04\x05\x06\x07\x08\x09\x0A\x0B\x0C\x0D\x0E\x0F\x00\x01\x02\x03\x04\x05\x06\x07\x08\x09\x0A\x0B\x0C\x0D\x0E\x0F", 32);
     test("Ascii base32", "ABCDEFGHIJKLMNOPQRSTUVWXYZ234567", 32);
     test("Ascii base64", "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/", 64);
     test("Long text", "Hey there, I really don't know what to write in theses 128 characters and its late so the qulity is .... not that great. Sorry for that.", 128);
