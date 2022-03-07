@@ -104,6 +104,8 @@ int main()
     test("Just zeros", "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0");
     test("Ascii Zeros", "0000000000000000");
     test("A ascii one", "1000000000000000");
+    test("Hex String", "\x01\x02\x03\x04\x05\x06\x07\x08\x09\x0A\x0B\x0C\x0E\x0F");
+    test("Overflow", "123456789ABCDEFGHIJKLMN");
     test("Ascii abc", "ABCDEFGHIJKLMNOP");
     test("Ascii hex", "0123456789abcdef");
     test("Hello World", "Hello World\0\0\0\0\0");
