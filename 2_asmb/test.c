@@ -107,7 +107,7 @@ void test(char *testname, char *testinput, int n)
 int main()
 {
     test("Empty input", "", 0);
-    test("Negative n", "", -32);
+    // test("Negative n", "", -32);
     test("32 Ascii Zeros", "00000000000000000000000000000000", 32);
     test("64 Ascii Zeros", "0000000000000000000000000000000000000000000000000000000000000000", 64);
     test("One Ascii One (32)", "10000000000000000000000000000000", 32);
