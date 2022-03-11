@@ -1,0 +1,86 @@
+id my_asma
+(
+id x
+)
+var
+id i
+=
+num 0
+;
+var
+id j
+=
+num 15
+;
+id loop
+:
+if
+id j
+>
+id i
+goto
+id exit
+;
+var
+id t
+=
+id x
+[
+id i
+]
+;
+id x
+[
+id i
+]
+=
+id x
+[
+id j
+]
+;
+id x
+[
+id j
+]
+=
+id t
+;
+id i
+=
+id i
++
+num 1
+;
+id j
+=
+id j
++
+(
+-
+num 1
+)
+;
+id exit
+:
+return
+num 0
+;
+end
+;
+id my_main
+(
+id argv
+,
+id argc
+)
+id my_asma
+(
+id argv
+)
+;
+return
+id argv
+;
+end
+;

@@ -1,0 +1,3 @@
+g{num}(c, b, a) end;
+foo{num, mun, umn, unm}(a, b, c) end;
+bar{num   ,  mun ,  umn         , unm        }(a, b, c) end;

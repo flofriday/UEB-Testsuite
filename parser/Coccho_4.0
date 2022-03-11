@@ -1,0 +1,9 @@
+sum(x, y)
+    return x + y;
+end;
+
+sum_products(a, b, x, y)
+    var z = a + b;
+    var w = x + y;
+    return z * w;
+end;

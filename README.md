@@ -10,4 +10,4 @@ use its tests.
 ## Contributing
 
 Contributions are very welcome, feel free to just create a PR.
-You are awsome 😊🎉
+You are awesome 😊🎉
