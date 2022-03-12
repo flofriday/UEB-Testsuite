@@ -1,0 +1,24 @@
+//My asma-function.
+my_asma(x)
+    var i = 0;
+    var j = 15;
+    
+    loop.
+
+    if j > i goto exit;
+    var t = x[i];
+    x[i] = x[j];
+    x[j] = t;
+    i = i + 1;
+    j = j + (-1);
+
+    exit:
+    return 0;
+end;
+
+my_main(argv, argc)
+    my_asma(argv);
+    return argv;
+end;
+
+//Just a random comment.
