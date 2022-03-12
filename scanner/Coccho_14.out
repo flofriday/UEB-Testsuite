@@ -1,0 +1,88 @@
+id hamlet
+(
+id to
+,
+id be
+,
+id or
+,
+id _not
+,
+id to
+,
+id be
+)
+id that
+=
+id is
++
+id the
++
+id question
+;
+id whether
+:
+id tis
+:
+id nobler
+:
+id in
+=
+id the
+@
+(
+id mind
+,
+id to
+,
+id suffer
+)
+;
+id the
+=
+id slings
+*
+id _and
+*
+id arrows
+(
+id of
+,
+id outrageous
+)
+*
+(
+-
+id fortune
+{
+id or
+,
+id to
+,
+id take
+,
+id arms
+}
+)
+;
+id against
+:
+id a_sea_of_troubles
+:
+id _and
+=
+id by_opposing
+*
+id _end
+*
+id them
+;
+id to_die
+:
+id to_sleep
+:
+return
+id no_more
+;
+end
+;
