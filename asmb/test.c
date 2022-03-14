@@ -14,7 +14,7 @@
  * The body of this function will be your assembly code.
  * But since this test file calls your code it needs this declaration.
  */
-void asmb(char x[], int n);
+void asmb(char x[], long n);
 
 /**
  * This is the reference implementation as found in the assignment,
@@ -35,9 +35,9 @@ void asmb_controll(char x[], long n)
  * A simple helper that will print a chararray as hex values.
  * This is helpful wenn printf fails because the string is null-terminated.
  */
-void print_hex(char text[], int n)
+void print_hex(char text[], long n)
 {
-    for (int i = 0; i < n; i++)
+    for (long i = 0; i < n; i++)
     {
         if (i != 0)
         {
@@ -67,19 +67,20 @@ void print_hex(char text[], int n)
  *
  * @param n The number of bytes in the testinput. Should be a muliple of 32.
  */
-void test(char *testname, char *testinput, int n)
+void test(char *testname, char *testinput, long n)
 {
     assert(n % 32 == 0);
 
     // if n is negative, use strlen
-    int inlen = n;
-    if (n < 0) {
-      inlen = strlen(testinput);
+    long inlen = n;
+    if (n < 0)
+    {
+        inlen = strlen(testinput);
     }
 
     char controlldata[inlen];
     memcpy(controlldata, testinput, inlen);
-    
+
     // Create mutable copies of the testinput string
     char testdata[inlen];
     memcpy(testdata, testinput, inlen);
@@ -92,7 +93,7 @@ void test(char *testname, char *testinput, int n)
     {
         printf("Test '%s' passed.\n", testname);
         return;
-    }   
+    }
 
     // Oh no.
     // The test failed.
@@ -101,12 +102,12 @@ void test(char *testname, char *testinput, int n)
     printf("Test '%s' failed!\n", testname);
     printf("Your implementation returned:\n\thex: ");
     print_hex(testdata, inlen);
-    printf("\n\tascii: '%.*s'", inlen, testdata);
+    printf("\n\tascii: '%.*s'", ((int)inlen), testdata);
     printf("\n");
     printf("But should have returned: ");
     printf("\n\thex: ");
     print_hex(controlldata, inlen);
-    printf("\n\tascii: '%.*s'", inlen, controlldata);
+    printf("\n\tascii: '%.*s'", ((int)inlen), controlldata);
     printf("\n\n");
 }
 
@@ -121,5 +122,5 @@ int main()
     test("Ascii base32", "ABCDEFGHIJKLMNOPQRSTUVWXYZ234567", 32);
     test("Ascii base64", "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/", 64);
     test("Long text", "Hey there, I really don't know what to write in theses 128 characters and its late so the qulity is .... not that great. Sorry for that.", 128);
-    // test("Negative n", "", -32);
+    test("Negative n", "", -32);
 }
