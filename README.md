@@ -5,8 +5,8 @@ A testsuite for the Übersetzterbau (Compilers) at [TU Wien](https://www.tuwien.
 ## Usage
 
 1. `git clone https://github.com/flofriday/UEB-Testsuite.git`
-2. `mv UEB-Testsuite abgabe`
-3. Implement your exercises in the designated test-suite directory. The directory structure is already the one you need for the submission.
+2. `mv UEB-Testsuite test`
+3. Run the tests as described in the individual test-suite folders for the tasks
 
 Every exercise has its own folder with a README.md for instructions on how to
 use its tests.
