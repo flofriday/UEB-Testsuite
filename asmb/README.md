@@ -10,6 +10,13 @@ You can easily add further tests by modifying `test.c`. If you do please
 consider pushing them upstream with a PR so that other students can benefit from
 them 😉
 
+To check that your assignment is in the correct folder you can run the much
+smaller testsuite from the LVA with:
+
+```bash
+/usr/ftp/pub/ubvl/test/asmb/test
+```
+
 ## Usage
 
 We assume here that you have already a `asmb.s` assembly file.
