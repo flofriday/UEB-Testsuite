@@ -123,4 +123,5 @@ int main()
     test("Ascii base64", "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/", 64);
     test("Long text", "Hey there, I really don't know what to write in theses 128 characters and its late so the qulity is .... not that great. Sorry for that.", 128);
     test("Negative n", "", -32);
+    test("Negative n w. content", "ABCDEFGHIJKLMNOPQRSTUVWXYZ234567", -32);
 }
