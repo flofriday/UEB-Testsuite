@@ -1,8 +1,5 @@
 # asmb tests
 
-**Disclaimer**: I haven't completed this assignment yet so there might be a
-problem with those tests.
-
 This tests your assembly implementation with the reference C implementation from
 the assignment.
 
