@@ -23,3 +23,22 @@ To write your own tests, follow the instructions given by the LVA team:
 When creating new tests, please use the following naming convention: 
 `{username}_{number}.{type}` 
 (e.g. `Coccho_03.1`), in order to avoid conflicts.
+
+If you add test please consider pushing them upstream with a PR so that other 
+students can benefit from them 😉
+
+<!--
+
+    _
+   / \
+   |-|
+   | |           Already got a parser?
+   |U|
+   |E|        Let's go to the moooooooooon!
+   |B|
+  /| |\
+ / | | \
+|  | |  |
+ `_"""_`
+
+-->
