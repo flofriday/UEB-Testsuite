@@ -15,10 +15,10 @@ binary called `scanner` (as wanted by the assignment).
 
 To write your own tests, follow the instructions given by the LVA team:
 
-> "Beim Scanner-Beispiel legen Sie für korrekte Eingaben Dateien mit Namen der 
+> Beim Scanner-Beispiel legen Sie für korrekte Eingaben Dateien mit Namen der 
 > Form *.0 an, und für die zugehörigen Ausgaben Dateien mit Namen der Form 
 > *.out; für Eingabendateien mit lexikalischen Fehlern legen Sie Dateien mit 
-> Namen der Form *.1 an."
+> Namen der Form *.1 an.
 
 When creating new tests, please use the following naming convention: 
 `{username}_{number}.{type}` 
