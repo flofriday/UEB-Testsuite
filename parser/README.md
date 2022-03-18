@@ -5,10 +5,10 @@ provided by the LVA.
 
 # Usage
 
-We asume here that a `make` in the folder `~/abgabe/parser` will create a 
+We assume here that a `make` in the folder `~/abgabe/parser` will create a 
 binary called `parser` (as wanted by the assignment).
 
-1. Copy the files from this directory into `~/test/parser`
+1. Copy the files from this directory into `~/test/parser` _(this is already the case if you have followed the instructions on the main page)_
 2. Run the tests with: `/usr/ftp/pub/ubvl/test/parser/test`
 
 # Contribution
