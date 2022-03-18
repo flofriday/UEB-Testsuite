@@ -5,10 +5,10 @@ provided by the LVA.
 
 ## Usage
 
-We asume here that a `make` in the folder `~/abgabe/scanner` will create a 
+We assume here that a `make` in the folder `~/abgabe/scanner` will create a 
 binary called `scanner` (as wanted by the assignment).
 
-1. Copy the files from this directory into `~/test/scanner`
+1. Copy the files from this directory into `~/test/scanner` _(this is already the case if you followed the instruction on the main page)_
 2. Run the tests with: `/usr/ftp/pub/ubvl/test/scanner/test`
 
 ## Contribution
