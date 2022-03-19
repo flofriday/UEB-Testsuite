@@ -1,0 +1,3 @@
+not_minus(x) 
+    return not - not - not - not - not - not x;
+end;
