@@ -1,15 +1,15 @@
 # parser tests
 
-Here are a couple of tests files that test the parser with the framework 
+Here are a couple of tests files that test the ag with the framework 
 provided by the LVA.
 
 # Usage
 
-We assume here that a `make` in the folder `~/abgabe/parser` will create a 
-binary called `parser` (as wanted by the assignment).
+We assume here that a `make` in the folder `~/abgabe/ag` will create a 
+binary called `ag` (as wanted by the assignment).
 
-1. Copy the files from this directory into `~/test/parser` _(this is already the case if you have followed the instructions on the main page)_
-2. Run the tests with: `/usr/ftp/pub/ubvl/test/parser/test`
+1. Copy the files from this directory into `~/test/ag` _(this is already the case if you have followed the instructions on the main page)_
+2. Run the tests with: `/usr/ftp/pub/ubvl/test/ag/test`
 
 # Contribution
 
@@ -32,7 +32,7 @@ students can benefit from them 😉
     _
    / \
    |-|
-   | |           Already got a parser?
+   | |           Already got the ag?
    |U|
    |E|        Let's go to the moooooooooon!
    |B|
