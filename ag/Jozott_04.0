@@ -1,0 +1,5 @@
+mixNotMinus(x)
+  // return -notnot--not-- x;
+  var t = not -- not - - not not x;
+  return not ---- not not not x;
+end;

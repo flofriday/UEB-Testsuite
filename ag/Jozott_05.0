@@ -1,0 +1,7 @@
+fn(n)
+  goto label;
+
+  label:        // valid label.
+    return n;
+  
+end;
