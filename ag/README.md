@@ -1,4 +1,4 @@
-# parser tests
+# ag tests
 
 Here are a couple of tests files that test the ag with the framework 
 provided by the LVA.
@@ -15,10 +15,9 @@ binary called `ag` (as wanted by the assignment).
 
 To write your own tests, follow the instructions given by the LVA team:
 
-> Für das Parser-Beispiel legen Sie Dateien der Form *.[012] an, wobei die 
-> Extension angibt, welchen exit-Status parser bei dieser Eingabe liefern sollen. 
-> Wenn Sie also eine Datei mit einem Syntax-Fehler anlegen, sollte sie z.B. 
-> "test.2" heißen.
+> Für das AG-Beispiel legen Sie Dateien der Form *.[0123] an, wobei die 
+> Extension angibt, welchen exit-Status ag bei dieser Eingabe liefern sollen. 
+> Bei einem lexikalischen Fehler soll der Fehler- status 1 erzeugt werden, bei einem Syntaxfehler Fehlerstatus 2, bei anderen Fehlern der Fehlerstatus 3.
 
 When creating new tests, please use the following naming convention: 
 `{username}_{number}.{type}` 
