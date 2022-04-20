@@ -1,0 +1,9 @@
+extern long f(long, long);
+extern long g(long);
+
+RET
+(
+    f(7, 3) == 10
+    && g(5) == -5
+    && f(7, 3) + g(f(7, 3)) == 0
+);
