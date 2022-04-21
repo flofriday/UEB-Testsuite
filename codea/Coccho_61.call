@@ -1,0 +1,10 @@
+extern long f(long*);
+extern long g(long*);
+
+long arr[] = {1, 2};
+
+RET
+(
+    f(arr) == 1
+    && g(arr) == 2
+);

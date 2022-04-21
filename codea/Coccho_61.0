@@ -1,0 +1,7 @@
+f(array)
+    return array[0];
+end;
+
+g(array)
+    return array[1];
+end;
