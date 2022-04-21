@@ -1,0 +1,10 @@
+extern long f(long*, long);
+
+long arr[] = {1, 2, 3};
+
+RET
+(
+    f(arr, 0) == 1
+    && f(arr, 1) == 2
+    && f(arr, 2) == 3
+);
