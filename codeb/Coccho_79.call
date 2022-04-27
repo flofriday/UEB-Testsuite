@@ -1,0 +1,16 @@
+extern long f(long*);
+
+long arr1[] = { 0 };
+long arr2[] = { 1 };
+long arr3[] = { -1 };
+long arr4[] = { 3 };
+long arr5[] = { 14 };
+
+RET
+(
+    f(arr1) == 2
+    && f(arr2) == 2
+    && f(arr3) == 2
+    && f(arr4) == 2
+    && f(arr5) == 2
+);

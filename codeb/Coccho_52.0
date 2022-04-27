@@ -1,0 +1,3 @@
+negating_minuses(x)
+    return - not not - - x;
+end;

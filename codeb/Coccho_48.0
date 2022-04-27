@@ -1,0 +1,3 @@
+f(x, y) return x + y; end;
+
+g(x) return -x; end;

@@ -1,0 +1,5 @@
+f(x)
+    var y = x;
+    y = y * 2;
+    return y;
+end;

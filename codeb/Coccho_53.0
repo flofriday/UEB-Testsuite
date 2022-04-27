@@ -1,0 +1,3 @@
+max_pars(a, b, c, d, e, f)
+    return d;
+end;

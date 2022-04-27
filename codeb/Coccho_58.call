@@ -1,0 +1,31 @@
+extern long sum(long);
+extern long mult(long);
+extern long neg(long);
+extern long logical(long);
+extern long _not(long);
+extern long greater(long);
+extern long equals(long);
+
+RET
+(
+    sum(1) == 0xb
+    && sum(-1) == 0x9
+
+    && mult(1) == 0x10
+    && mult(2) == 2 * 0x10
+
+    && neg(0) == -26
+    && neg(99) == -26
+
+    && logical(1) == 1
+    && logical(0) == 0
+
+    && _not(1) == -2
+    && _not(0) == -2
+
+    && greater(1) == 0
+    && greater(17) == 1
+
+    && equals(7) == 1
+    && equals(8) == 0
+);

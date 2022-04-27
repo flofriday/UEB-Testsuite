@@ -1,0 +1,12 @@
+extern long f(long*, long);
+
+long arr[] = { 0 };
+
+RET
+(
+    f(arr, 0) == 0
+    && f(arr, 1) == 1
+    && f(arr, -1) == -1
+    && f(arr, 2) == 2
+    && f(arr, 15) == 15
+);

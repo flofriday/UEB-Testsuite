@@ -1,0 +1,4 @@
+f(a)
+    var x = 17;
+    return x;
+end;
