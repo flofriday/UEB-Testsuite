@@ -1,0 +1,11 @@
+extern long equals(long, long);
+
+RET
+(
+    equals(1, 0) == 0
+    && equals(0, 0) == 1
+    && equals(0, 1) == 0
+    && equals(2, -1) == 0
+    && equals(-1, -2) == 0
+    && equals(-10, -10) == 1
+);

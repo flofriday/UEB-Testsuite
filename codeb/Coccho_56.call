@@ -1,0 +1,10 @@
+extern long greater(long, long);
+
+RET
+(
+    greater(1, 0) == 1
+    && greater(0, 0) == 0
+    && greater(0, 1) == 0
+    && greater(2, -1) == 1
+    && greater(-1, -2) == 1
+);

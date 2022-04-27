@@ -1,0 +1,9 @@
+extern long product(long, long, long);
+
+RET
+(
+    product(0, 1, 2) == product(2, 1, 0)
+    && product(0, 1, 2) == 0
+    && product(-1, 1, 1) == -1
+    && product(50, 4, 2) == 400
+);

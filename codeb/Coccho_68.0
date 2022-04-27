@@ -1,0 +1,11 @@
+f(x)
+    goto LABEL1;
+    return x;
+
+    LABEL1:
+    goto LABEL2;
+    return x * 2;
+    
+    LABEL2:
+    return x * 3;
+end;

@@ -1,0 +1,27 @@
+odd_sum(a, b)
+
+    if a + b goto SUM_ODD;
+    return 0;
+
+    SUM_ODD:
+    if a goto A_ODD;
+    return 2;
+
+    A_ODD:
+    return 1;
+
+end;
+
+even_sum(a, b)
+
+    if a + b goto SUM_ODD;
+    return 2;
+
+    SUM_ODD:
+    if a goto A_ODD;
+    return 0;
+
+    A_ODD:
+    return 1;
+
+end;

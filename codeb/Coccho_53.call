@@ -1,0 +1,8 @@
+extern long max_pars(long, long, long, long, long, long);
+
+RET
+(
+    max_pars(0, 1, 2, 3, 4, 5) == 3
+    && max_pars(5, 4, 3, 2, 1, 0) == 2
+    && max_pars(10, 20, 30, 40, 100, -25) == 40
+);

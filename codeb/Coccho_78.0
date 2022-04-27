@@ -1,0 +1,14 @@
+f(a, b, c)
+    var sum = a;
+    sum = sum + b;
+    sum = sum + c;
+
+    var product = a;
+    product = product * b;
+    product = product * c;
+
+    var result = sum;
+    result = result + product;
+    
+    return result;
+end;

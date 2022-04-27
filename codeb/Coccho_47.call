@@ -1,0 +1,5 @@
+extern long f(long);
+
+//This language's NOT is represented by notq in Assembly, which performs bitwise negation.
+//Sadly, in this model, "NOT 0" is not 1, and vice versa.
+RET(f(0) == -1 && f(1) == -2);

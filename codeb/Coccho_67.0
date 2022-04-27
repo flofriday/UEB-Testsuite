@@ -1,0 +1,7 @@
+is_odd(x)
+    if x goto ODD;
+    return 0;
+    
+    ODD:
+    return 1;
+end;
