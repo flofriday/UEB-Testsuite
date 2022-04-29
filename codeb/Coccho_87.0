@@ -1,0 +1,11 @@
+f(x)
+    var fc1 = g{x};
+    var fc2 = g{x * 2};
+    var fc3 = g{x * 3};
+
+    return fc1;
+end;
+
+g(x)
+    return x;
+end;

@@ -1,0 +1,8 @@
+g(x)
+    return x;
+end;
+
+f(x)
+    var func = g{x};
+    return func;
+end;
