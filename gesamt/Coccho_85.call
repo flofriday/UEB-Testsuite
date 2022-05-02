@@ -1,0 +1,29 @@
+extern long g(long);
+extern long* f(long);
+
+struct flat_closure
+{
+    long (*func)(long);
+    long x;
+};
+
+long* fc_addr1 = f(1);
+long* fc_addr2 = f(2);
+long* fc_addr3 = f(3);
+long* fc_addr4 = f(4);
+long* fc_addr5 = f(5);
+
+struct flat_closure fc1 = { (long (*)(long)) * fc_addr1, *(fc_addr1 + 1) };
+struct flat_closure fc2 = { (long (*)(long)) * fc_addr2, *(fc_addr2 + 1) };
+struct flat_closure fc3 = { (long (*)(long)) * fc_addr3, *(fc_addr3 + 1) };
+struct flat_closure fc4 = { (long (*)(long)) * fc_addr4, *(fc_addr4 + 1) };
+struct flat_closure fc5 = { (long (*)(long)) * fc_addr5, *(fc_addr5 + 1) };
+
+RET
+(
+    fc1.func(1) == 1 && fc1.x == 1
+    && fc2.func(2) == 2 && fc2.x == 2
+    && fc3.func(3) == 3 && fc3.x == 3
+    && fc4.func(-1) == -1 && fc4.x == 4
+    && fc5.func(23) == 23 && fc5.x == 5
+);

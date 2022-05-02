@@ -1,0 +1,10 @@
+extern long complex(long);
+
+RET
+(
+    complex(0) == -10
+    && complex(1) == -21
+    && complex(2) == -36
+    && complex(-2) == 0
+    && complex(-3) == -1
+);

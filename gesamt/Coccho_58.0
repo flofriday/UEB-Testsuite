@@ -1,0 +1,27 @@
+sum(a)
+    return a + $a;
+end;
+
+mult(a)
+    return a * $10;
+end;
+
+neg(a)
+    return -$1A;
+end;
+
+logical(a)
+    return a and $1;
+end;
+
+_not(a)
+    return not $1;
+end;
+
+greater(a)
+    return a > $F;
+end;
+
+equals(a)
+    return a = $7;
+end;

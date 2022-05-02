@@ -1,0 +1,5 @@
+f(x)
+    var y = x;
+    var z = y;
+    return z;
+end;

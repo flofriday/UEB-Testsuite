@@ -1,0 +1,2 @@
+extern long f(long, long);
+RET(f(0, 0) == 0 && f(1, 0) == 0 && f(0, 1) == 0 && f(1, 1) == 1);

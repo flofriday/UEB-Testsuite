@@ -1,0 +1,5 @@
+f(a, b, c)
+    var sum = a + b + c;
+    var product = a * b * c;
+    return sum + product;
+end;

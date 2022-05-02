@@ -1,0 +1,4 @@
+f(x)
+    x; //Test if "term;" breaks the code.
+    return x;
+end;

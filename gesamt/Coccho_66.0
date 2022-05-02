@@ -1,0 +1,7 @@
+f(x)
+    goto Label;
+    return x * 2;
+        
+    Label:
+    return x;
+end;
