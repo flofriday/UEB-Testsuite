@@ -14,11 +14,11 @@ long* fc_addr3 = f(3);
 long* fc_addr4 = f(4);
 long* fc_addr5 = f(5);
 
-struct flat_closure fc1 = { (long (*)(long, long)) fc_addr1, *(fc_addr1 + 1), *(fc_addr1 + 2) };
-struct flat_closure fc2 = { (long (*)(long, long)) fc_addr2, *(fc_addr2 + 1), *(fc_addr2 + 2) };
-struct flat_closure fc3 = { (long (*)(long, long)) fc_addr3, *(fc_addr3 + 1), *(fc_addr3 + 2) };
-struct flat_closure fc4 = { (long (*)(long, long)) fc_addr4, *(fc_addr4 + 1), *(fc_addr4 + 2) };
-struct flat_closure fc5 = { (long (*)(long, long)) fc_addr5, *(fc_addr5 + 1), *(fc_addr5 + 2) };
+struct flat_closure fc1 = { (long (*)(long, long)) * fc_addr1, *(fc_addr1 + 1), *(fc_addr1 + 2) };
+struct flat_closure fc2 = { (long (*)(long, long)) * fc_addr2, *(fc_addr2 + 1), *(fc_addr2 + 2) };
+struct flat_closure fc3 = { (long (*)(long, long)) * fc_addr3, *(fc_addr3 + 1), *(fc_addr3 + 2) };
+struct flat_closure fc4 = { (long (*)(long, long)) * fc_addr4, *(fc_addr4 + 1), *(fc_addr4 + 2) };
+struct flat_closure fc5 = { (long (*)(long, long)) * fc_addr5, *(fc_addr5 + 1), *(fc_addr5 + 2) };
 
 RET
 (
