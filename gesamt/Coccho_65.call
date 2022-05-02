@@ -1,0 +1,18 @@
+struct g_stage1
+{
+    long (*func) (long);
+    long x;
+};
+
+extern long f(long* arr, long y, struct g_stage1* gs1);
+extern long g(long);
+
+long arr[] = {1, 2, 3};
+struct g_stage1 g1 = {&g, 1};
+
+RET
+(
+    f(arr, -1, &g1) == 1
+    && f(arr, 0, &g1) == 2
+    && f(arr, 1, &g1) == 3
+);

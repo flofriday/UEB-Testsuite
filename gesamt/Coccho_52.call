@@ -1,0 +1,8 @@
+extern long negating_minuses(long);
+
+RET
+(
+    negating_minuses(0) == 0
+    && negating_minuses(1) == -1
+    && negating_minuses(-1) == 1
+);

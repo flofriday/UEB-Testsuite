@@ -1,0 +1,7 @@
+f{x}(array, y)
+    return array[x + y];
+end;
+
+g(x)
+    return x;
+end;

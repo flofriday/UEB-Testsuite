@@ -1,0 +1,20 @@
+extern long logical(long, long, long, long);
+
+RET
+(
+    logical(0, 0, 0, 0) == 0
+    && logical(0, 0, 0, 1) == 0
+    && logical(0, 0, 1, 0) == 0
+    && logical(0, 0, 1, 1) == 0
+    && logical(0, 1, 0, 0) == 0
+    && logical(0, 1, 0, 1) == 0
+    && logical(0, 1, 1, 1) == 0
+    && logical(1, 0, 0, 0) == 0
+    && logical(1, 0, 0, 1) == 0
+    && logical(1, 0, 1, 0) == 0
+    && logical(1, 0, 1, 1) == 0
+    && logical(1, 1, 0, 0) == 0
+    && logical(1, 1, 0, 1) == 0
+    && logical(1, 1, 1, 0) == 0
+    && logical(1, 1, 1, 1) == 1
+);

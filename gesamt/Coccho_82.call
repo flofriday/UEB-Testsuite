@@ -1,0 +1,10 @@
+struct f_stage1
+{
+    long (*func) (long, struct f_stage1*);
+    long x;
+};
+
+extern long f(long y, struct f_stage1* fs1);
+struct f_stage1 f1 = {&f, 5};
+
+RET(f(6, &f1) == 11 && f(-3, &f1) == 2);

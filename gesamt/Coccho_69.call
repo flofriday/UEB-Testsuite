@@ -1,0 +1,10 @@
+extern long odd_sum(long, long);
+extern long even_sum(long, long);
+
+RET
+(
+    odd_sum(1, 1) == 0 && even_sum(1, 1) == 2
+    && odd_sum(0, 1) == 2 && even_sum(0, 1) == 0
+    && odd_sum(1, 0) == 1 && even_sum(1, 0) == 1
+    && odd_sum(3, 5) == 0 && even_sum(3, 5) == 2
+);
