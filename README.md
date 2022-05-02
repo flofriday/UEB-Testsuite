@@ -1,6 +1,6 @@
 # UEB-Testsuite
 
-A testsuite for the Übersetzterbau (Compilers) at [TU Wien](https://www.tuwien.at/en/) 2022S.
+A testsuite for the [Übersetzterbau (Compilers)](https://tiss.tuwien.ac.at/course/courseDetails.xhtml?dswid=3349&dsrid=144&courseNr=185A48&semester=2022S&locale=en) at [TU Wien](https://www.tuwien.at/en/) 2022S.
 
 ## Usage
 
@@ -18,6 +18,10 @@ When compiling code generated with flex and `-Wall` you will get warnings that `
 %option noinput
 %option nounput
 ```
+
+There are two great videos on YouTube for an overview of [flex](https://www.youtube.com/watch?v=LpVufkH4gog&list=PLImMVrOC3KFn0US0AiW0JYLaU8mCtrqG0&index=7) and [bison](https://www.youtube.com/watch?v=fFRxWtRibC8&list=PLImMVrOC3KFn0US0AiW0JYLaU8mCtrqG0&index=13).
+
+On [VoWi Übersetzterbau](https://vowi.fsinf.at/wiki/TU_Wien:%C3%9Cbersetzerbau_VU_(Ertl,_Krall)) are some solutions from past semesters which can be very helpfull in understanding, and learning from practial examples.
 
 ## Contributing
 
