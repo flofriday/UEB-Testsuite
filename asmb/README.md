@@ -3,7 +3,7 @@
 This tests your assembly implementation with the reference C implementation from
 the assignment.
 
-You can easily add further tests by modifying `test.c`. If you do please
+You can easily add further tests by modifying `test.c`. If you do, please
 consider pushing them upstream with a PR so that other students can benefit from
 them 😉
 
