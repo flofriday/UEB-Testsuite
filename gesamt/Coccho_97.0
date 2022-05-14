@@ -1,0 +1,15 @@
+f(bool)
+    if bool goto true;
+    return h(2);
+
+    true:
+    return g(2);
+end;
+
+g(b)
+    return b;
+end;
+
+h(x)
+    return x * 2;
+end;

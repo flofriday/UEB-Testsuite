@@ -1,0 +1,14 @@
+f(x)
+    var sum = g(x) + z(x);
+    return sum;
+end;
+
+g(x)
+    var y = x;
+    return y;
+end;
+
+z(x)
+    var y = x;
+    return y;
+end;

@@ -1,0 +1,10 @@
+f(x, y)
+    var z = x + y;
+    var w = g(z);
+    return w + 2;
+end;
+
+g(x)
+    var y = 2;
+    return x * y;
+end;

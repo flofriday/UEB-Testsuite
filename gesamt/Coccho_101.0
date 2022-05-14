@@ -1,0 +1,18 @@
+f(x)
+    var z = g(x);
+    return z;
+end;
+
+g(x)
+    var z = h(x);
+    return z;
+end;
+
+h(x)
+    var z = i(x);
+    return z;
+end;
+
+i(x)
+    return x;
+end;

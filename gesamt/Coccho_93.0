@@ -1,0 +1,7 @@
+f(a, b, c)
+    return factor(a, b, c, 2);
+end;
+
+factor(a, b, c, factor)
+    return (a + b + c) * factor;
+end;

@@ -1,0 +1,14 @@
+f(arr)
+    var sum = g(arr[0]) + z(arr[1]);
+    return sum;
+end;
+
+g(x)
+    var y = x;
+    return y;
+end;
+
+z(x)
+    var y = x;
+    return y;
+end;

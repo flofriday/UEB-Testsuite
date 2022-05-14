@@ -1,0 +1,7 @@
+f(x)
+    return g(x);
+end;
+
+g(x)
+    return x * 2;
+end;

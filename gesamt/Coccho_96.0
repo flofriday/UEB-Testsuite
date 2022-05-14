@@ -1,0 +1,8 @@
+f(x)
+    var z = g(x);
+    return x;
+end;
+
+g(x)
+    return x * 2;
+end;
