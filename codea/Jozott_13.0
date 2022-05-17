@@ -1,0 +1,3 @@
+greater(a)
+    return $F > a;
+end;

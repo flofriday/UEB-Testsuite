@@ -1,0 +1,7 @@
+extern long greater(long);
+
+RET
+(   
+    greater(1) == 0
+    && greater(17) == 1
+);
