@@ -18,5 +18,5 @@ struct flat_closure fc12 = { (long (*)(long)) * (arr1[1]), *(arr1[1] + 1) };
 RET
 (
     fc11.func(1) == 1 && fc11.x == 1
-    && fc11.func(2) == 2 && fc12.x == 2
+    && fc12.func(2) == 2 && fc12.x == 2
 );
