@@ -1,0 +1,22 @@
+extern long f(long*);
+
+long arr1[] = { 2, 2 };
+long arr2[] = { 2, 2 };
+long arr3[] = { 2, 2 };
+long arr4[] = { 2, 2 };
+long arr5[] = { 2, 2 };
+
+f(arr1);
+f(arr2);
+f(arr3);
+f(arr4);
+f(arr5);
+
+RET
+(
+    arr1[0] == 0 && arr1[1] == 1
+    && arr2[0] == 0 && arr2[1] == 1
+    && arr3[0] == 0 && arr3[1] == 1
+    && arr4[0] == 0 && arr4[1] == 1
+    && arr5[0] == 0 && arr5[1] == 1
+);

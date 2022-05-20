@@ -8,7 +8,7 @@ struct flat_closure
     long x;
 };
 
-long *arr1[] = { 0, 1 };
+long *arr1[] = { (long*)0, (long*)1 };
 
 f(1,2,arr1);
 
@@ -18,5 +18,5 @@ struct flat_closure fc12 = { (long (*)(long)) * (arr1[1]), *(arr1[1] + 1) };
 RET
 (
     fc11.func(1) == 1 && fc11.x == 1
-    && fc11.func(2) == 2 && fc12.x == 2
+    && fc12.func(2) == 2 && fc12.x == 2
 );
