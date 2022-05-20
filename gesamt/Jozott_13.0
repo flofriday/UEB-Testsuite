@@ -1,0 +1,13 @@
+g{x}(y)
+  return x;
+end;
+
+h{x}(y)
+  return x;
+end;
+
+f(a,b,result)
+  result[0] = g{a};
+  result[1] = h{b};
+  return result;
+end;

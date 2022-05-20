@@ -1,0 +1,17 @@
+extern long g(long);
+extern long* f(long);
+
+struct flat_closure
+{
+    long (*func)(long, struct flat_closure*);
+    long x;
+};
+
+long* fc_addr = f(1);
+
+struct flat_closure fc = { (long (*)(long, struct flat_closure*)) * fc_addr, *(fc_addr + 1) };
+
+RET
+(
+    fc.func(2, &fc) == 3 && fc.x == 1
+);
