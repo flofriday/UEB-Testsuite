@@ -1,5 +1,6 @@
 f(x)
-    return g{x}@(1);
+    var h = g{x};
+    return h@(1);
 end;
 
 g{x}(y)

@@ -1,8 +1,10 @@
 extern long f(long);
 
-long ret = f(1);
-
 RET
 (
-    ret == 2
+    f(1) == 2
+    && f(0) == 1
+    && f(2) == 3
+    && f(-1) == 0
+    && f(37) == 38
 );
