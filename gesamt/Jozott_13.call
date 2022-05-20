@@ -8,7 +8,7 @@ struct flat_closure
     long x;
 };
 
-long *arr1[] = { 0, 1 };
+long *arr1[] = { (long*)0, (long*)1 };
 
 f(1,2,arr1);
 
