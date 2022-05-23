@@ -1,5 +1,5 @@
 
-extern long f(long, long);
+extern long f(long*, long);
 
 long arr[2];
 
