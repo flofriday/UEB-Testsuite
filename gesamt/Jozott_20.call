@@ -1,0 +1,11 @@
+
+extern long f(long, long);
+
+long arr[2];
+
+RET
+(
+    f(arr,0) == 0 &&
+    f(arr,1) == 5 &&
+    f(arr,2) == 10
+);

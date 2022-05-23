@@ -1,0 +1,9 @@
+
+extern long f(long, long);
+
+RET
+(
+    f(1,2) == 5 &&
+    f(3,2) == 7 &&
+    f(0,0) == 0
+);
