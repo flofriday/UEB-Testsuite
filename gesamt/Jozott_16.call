@@ -1,0 +1,8 @@
+
+extern long f(long);
+
+RET
+(
+    f(1) == 3 &&
+    f(3) == 9
+);

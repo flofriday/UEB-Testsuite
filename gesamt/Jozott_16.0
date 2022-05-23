@@ -1,0 +1,11 @@
+f(x)
+    return g(x) + z(x) + g(x);
+end;
+
+g(x)
+    return x;
+end;
+
+z(x)
+    return x;
+end;
