@@ -1,0 +1,7 @@
+g(y,x)
+  return x;
+end;
+
+f(x,y)
+  return g(y,x);
+end;
