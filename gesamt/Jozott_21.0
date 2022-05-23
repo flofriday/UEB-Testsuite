@@ -1,0 +1,11 @@
+f(x,y,z)
+    return h{x}@(y)@(z);
+end;
+
+h{x}(y)
+  return g{x+y};
+end;
+
+g{x}(z)
+  return z * x;
+end;
