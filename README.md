@@ -11,7 +11,7 @@ Every exercise has its own folder with a README.md for instructions on how to
 use its tests.
 
 ## Other Tipps
-[Compiler Explorer (godbolt)](https://godbolt.org/z/PjP4r1GqP) is an amazing Website with which you can discover how different compilers translate code to machine instructions.
+[Compiler Explorer (godbolt)](https://godbolt.org/z/PjP4r1GqP) is an amazing Website with which you can discover how different compilers translate code to machine instructions. You will need to add the `-masm=att` flag to enable AT&T syntax and I would also suggest using the `-Os` flag which optimizes for the least number of instructions. However sometimes its handy to turnoff optimizations with `-O0`.
 
 When compiling code generated with flex and `-Wall` you will get warnings that `input` and `yyunput` is unused. By adding the following lines to the top of the file you can fix those warnings.
 ```
