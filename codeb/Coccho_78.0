@@ -7,8 +7,5 @@ f(a, b, c)
     product = product * b;
     product = product * c;
 
-    var result = sum;
-    result = result + product;
-    
-    return result;
+    return sum + product;
 end;
