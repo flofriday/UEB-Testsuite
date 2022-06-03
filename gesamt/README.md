@@ -1,14 +1,14 @@
-# codeb tests
+# gesamt tests
 
-Here are a couple of tests files that test the code-b with the framework
+Here are a couple of tests files that test gesamt with the framework
 provided by the LVA.
 
 # Usage
 
-We assume here that a `make` in the folder `~/abgabe/codeb` will create a
-binary called `codeb` (as wanted by the assignment).
+We assume here that a `make` in the folder `~/abgabe/gesamt` will create a
+binary called `gesamt` (as wanted by the assignment).
 
-1. Copy the files from this directory into `~/test/codeb` _(this is already the case if you have followed the instructions on the main page)_
+1. Copy the files from this directory into `~/test/gesamt` _(this is already the case if you have followed the instructions on the main page)_
 2. Run the tests with: `/usr/ftp/pub/ubvl/test/gesamt/test`
 
 # Contribution
