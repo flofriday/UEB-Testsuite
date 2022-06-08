@@ -1,4 +1,4 @@
-extern long gcd(long*, long*);
+extern long gcd(long, long);
 
 RET
 (
