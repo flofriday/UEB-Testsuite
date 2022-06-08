@@ -1,0 +1,10 @@
+// Verify that stage ones of closures get correctly created
+// (Discovered by austriangam3r on Discord)
+f{a, b, c}(x)
+    return 42;
+end;
+
+g(a)
+    var sum = f{1,1+2,3};
+    return sum;
+end;

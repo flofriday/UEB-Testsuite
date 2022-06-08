@@ -1,0 +1,18 @@
+struct flat_closure
+{
+    long (*func)(long, long, long);
+    long x;
+    long y;
+    long z;
+};
+
+extern long f(struct flat_closure*, long);
+extern struct flat_closure* g(long);
+
+struct flat_closure *result = g(0);
+RET
+(
+    result->x == 1 
+    && result->y == 3
+    && result->z == 3
+);

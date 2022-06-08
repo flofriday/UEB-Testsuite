@@ -1,0 +1,6 @@
+// Verify that immediate values are tested
+// (Requested by vienna_disco on Discord)
+h(a)
+    var sum = 1 and 2;
+    return sum;
+end;

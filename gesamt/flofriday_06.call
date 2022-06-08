@@ -1,0 +1,6 @@
+extern long g(long);
+
+RET(
+    g(0) == 2 
+    && g(42) == 2
+);

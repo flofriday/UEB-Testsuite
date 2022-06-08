@@ -1,0 +1,6 @@
+extern long h(long);
+
+RET(
+    h(0) == 1 
+    && h(42) == 1
+);

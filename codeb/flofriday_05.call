@@ -1,0 +1,6 @@
+extern long f(long);
+
+RET(
+    f(0) == 3 
+    && f(9000) == 3
+);
