@@ -1,0 +1,9 @@
+// Adapted from the official test 'Eingabe(b5.0)'
+// This was wrong for me as my compiler complained that I used one lable more 
+// than once, which should work.
+// So I added this test.
+gcd(a,b)
+ st: if not(a>b) goto le; a=a+(-b); goto st;
+ le: if a=b goto eq;      b=(-a)+b; goto st;
+ eq: return a;
+end;
