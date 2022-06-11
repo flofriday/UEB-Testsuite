@@ -10,5 +10,5 @@ my_pow(n, e)
         return n;
 
     returnOne:
-        return 0;
+        return 1;
 end;
