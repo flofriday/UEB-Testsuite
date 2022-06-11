@@ -1,0 +1,13 @@
+// A recursive implementation of the fibonacci sequence
+fib(n) 
+    if 1 > n goto returnZero;
+    if 1 = n goto returnOne;
+
+    return fib(n + (-1)) + fib(n + (-2));
+
+    returnZero:
+        return 0;
+
+    returnOne:
+        return 1;
+end;

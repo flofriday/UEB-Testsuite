@@ -1,0 +1,14 @@
+extern long my_pow(long, long);
+
+RET
+(
+    my_pow(1, 1) == 1
+    && my_pow(3, 0) == 1
+    && my_pow(2, 2) == 4
+    && my_pow(3, 2) == 9
+    && my_pow(4, 3) == 64
+    && my_pow(2, 8) == 256
+    && my_pow(2, 16) ==  65536
+    && my_pow(16, 2) == 256
+    && my_pow(3, 7) == 2187
+);

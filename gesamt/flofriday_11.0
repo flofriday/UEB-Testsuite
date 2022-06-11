@@ -1,0 +1,14 @@
+// Recursive implementation of a power algorithm where: pow(n, e) == n^e
+// Only works for e >= 0
+my_pow(n, e) 
+    if 1 > e goto returnOne;
+    if 1 = e goto returnSelf;
+
+    n = n * my_pow(n, e + (-1));
+
+    returnSelf:
+        return n;
+
+    returnOne:
+        return 0;
+end;

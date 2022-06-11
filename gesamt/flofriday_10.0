@@ -1,0 +1,17 @@
+// Iterative implementation of a power algorithm where: pow(n, e) == n^e
+// Only works for e >= 0
+my_pow(n, e) 
+    if 1 > e goto returnOne;
+    if 1 = e goto returnSelf;
+
+    loop:
+        n = n * n;
+        e = e + (-1);
+        if e > 1 goto loop;
+
+    returnSelf:
+        return n;
+
+    returnOne:
+        return 1;
+end;
