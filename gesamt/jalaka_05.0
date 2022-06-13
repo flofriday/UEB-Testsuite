@@ -1,0 +1,4 @@
+//test if flat_closure by parameter works
+my_call(x)
+    return (x+16) @(5);
+end;
